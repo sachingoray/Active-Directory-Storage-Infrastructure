@@ -66,14 +66,14 @@ To demonstrate the setup and provide visual proof:
 
 1. **AD Structure & Security Groups**  
    Shows the OU hierarchy and groups created.  
-   ![AD Structure](Screenshots/AD-Structure.png)
+   ![AD Structure](Screenshots/Active-Directory-Users-and-Computers/DC-ADUC.png)
 
 2. **Domain Controller Roles** *(Optional but recommended)*  
    Shows that **AD DS** and **DNS** roles are installed and domain name is `technova.edu`.  
-   ![DC Roles](Screenshots/DC-Roles.png)
+   ![DC Roles](Screenshots/Active-Directory-Users-and-Computers/DC-localserver.png)
 
 3. **Member Server Join** *(Optional but recommended)*  
    Shows that Uni-FS is successfully joined to the domain.  
-   ![Member Server Join](Screenshots/Member-Server-Join.png)
+   ![Member Server Join](Screenshots/Active-Directory-Users-and-Computers/FS-domain-connected.png)
 
 
