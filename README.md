@@ -12,7 +12,7 @@ Simulated a full university-style Windows Server 2022 environment with Active Di
 6. [Security & FSRM](#security--fsrm)
 7. [Troubleshooting](#troubleshooting)
 8. [Skills Demonstrated](#skills-demonstrated)
-9. [Screenshots](#screenshots)
+9. [Lesson learned](#Lesson-learned)
 
 
 ## Project Overview
@@ -150,9 +150,53 @@ File Server Resource Manager (FSRM) was deployed to enforce storage governance a
 
 ### Screenshots
 1. Active File Screen Configuration  
-![File Screening](Screenshots/File-server-resource-Manager/File-server-manager.png)
+![File Screening](Screenshots/File-Server-resource-Manager/File-server-manager.png)
 
 
 
+## Troubleshooting
+
+During implementation, multiple issues were identified and resolved:
+
+### Active Directory Lookup Failure
+- Encountered "Name Not Found" error while assigning permissions.
+- Verified domain connectivity.
+- Confirmed Global Catalog availability.
+- Restarted server to clear cached credential issues.
+
+### DNS Misconfiguration
+- Identified incorrect DNS settings on client and file server.
+- Reconfigured systems to use Domain Controller as primary DNS.
+- Validated domain authentication after correction.
+
+### GPO Application Issues
+- Forced policy update using gpupdate /force.
+- Verified applied policies using gpresult /r.
 
 
+## Skills Demonstrated
+
+- Active Directory Domain Services (AD DS)
+- DNS Configuration & Troubleshooting
+- NTFS & SMB Permission Engineering
+- Security Group-Based Access Control
+- Access-Based Enumeration (ABE)
+- Group Policy Management
+- File Server Resource Manager (FSRM)
+- Identity & Access Management (IAM)
+- Windows Server Administration
+- Enterprise Infrastructure Simulation
+- Technical Troubleshooting & Root Cause Analysis
+
+
+## Lessons Learned
+
+During this lab project, I gained hands-on experience in building and managing an enterprise-style Windows Server environment. Key lessons included:
+
+- Understanding the difference between **SMB share permissions** and **NTFS permissions**, and how both layers work together to secure files.
+- Implementing **Access-Based Enumeration (ABE)** to provide a secure, user-friendly drop-box model.
+- Designing **Organizational Units (OUs) and Security Groups** for scalable identity and access management.
+- Automating user experience with **Group Policy Objects (GPOs)**, including drive mapping and folder redirection.
+- Troubleshooting real-world issues such as **DNS misconfigurations** and **AD permission lookup errors**.
+- Realizing the importance of testing both **server-side configuration** and **client-side results** to ensure security and usability.
+- Gaining confidence in **virtualization**, networking, and enterprise-level file governance practices.
