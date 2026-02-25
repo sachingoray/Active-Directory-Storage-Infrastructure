@@ -124,10 +124,10 @@ Group Policy Objects (GPOs) were implemented to automate user experience and enf
 ### Screenshots
 
 1. GPO Drive Mapping Configuration  
-![Drive Mapping GPO](Screenshots/Group-Policy-Management-console/Group-policy.png)
+![Drive Mapping GPO](Screenshots/Group-Policy-Management-Console/Group-policy.png)
 
 3. gpresult Verification Output  
-![GPResult](Screenshots/Group-Policy-Management-console/gpo-result-std.png)
+![GPResult](Screenshots/Group-Policy-Management-Console/gpo-result-std.png)
 
 
 ## Security & FSRM
