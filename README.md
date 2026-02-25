@@ -130,9 +130,31 @@ Group Policy Objects (GPOs) were implemented to automate user experience and enf
 ![GPResult](Screenshots/GPResult.png)
 
 
+## Security & FSRM
 
+File Server Resource Manager (FSRM) was deployed to enforce storage governance and prevent misuse.
 
+- Installed **File Server Resource Manager** role on Uni-FS.
+- Created Active File Screening policy.
+- Blocked high-risk and non-academic file types:
+  - .exe (prevent malware / unauthorized software)
+  - .mp3
+  - .mp4
+- Enforced policy in real-time using Active Screening.
 
+### Security Objective
+
+- Reduce malware risk.
+- Prevent storage abuse.
+- Enforce controlled file submission standards.
+
+### Screenshots
+
+1. FSRM Role Installed  
+![FSRM Installed](Screenshots/FSRM-Installed.png)
+
+2. Active File Screen Configuration  
+![File Screening](Screenshots/File-Screening.png)
 
 
 
