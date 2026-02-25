@@ -124,10 +124,10 @@ Group Policy Objects (GPOs) were implemented to automate user experience and enf
 ### Screenshots
 
 1. GPO Drive Mapping Configuration  
-![Drive Mapping GPO](Screenshots/Group-Policy-Managment-console/Group-policy.png)
+![Drive Mapping GPO](Screenshots/Group-Policy-Management-console/Group-policy.png)
 
 3. gpresult Verification Output  
-![GPResult](Screenshots/GPResult.png)
+![GPResult](Screenshots/Group-Policy-Management-console/gpo-result-std.png)
 
 
 ## Security & FSRM
@@ -149,12 +149,8 @@ File Server Resource Manager (FSRM) was deployed to enforce storage governance a
 - Enforce controlled file submission standards.
 
 ### Screenshots
-
-1. FSRM Role Installed  
-![FSRM Installed](Screenshots/FSRM-Installed.png)
-
-2. Active File Screen Configuration  
-![File Screening](Screenshots/File-Screening.png)
+1. Active File Screen Configuration  
+![File Screening](Screenshots/File-server-resource-Manager/File-server-manager.png)
 
 
 
