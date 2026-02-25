@@ -102,10 +102,39 @@ The Uni-FS member server was configured as a centralized storage system for stud
 ![SMB Share](Screenshots/File-server-SS/FS-smb-share.png)
 
 2. NTFS Advanced Permissions – Creator Owner Implementation (Server Side)  
-![NTFS Permissions](Screenshots/File-server-SS/NTFS-security.png)
+![NTFS Permissions](Screenshots/File-server-SS/NTSF-security.png)
 
 3. Access-Based Enumeration (ABE) Enabled (Server Side)  
 ![ABE Enabled](Screenshots/File-server-SS/FS-enumeration.png)
 
 4. Student View – Secure Drop-Box Model in Action (Client Side)  
 ![Student View](Screenshots/File-server-SS/studentview.png)
+
+## Group Policy Automation
+
+Group Policy Objects (GPOs) were implemented to automate user experience and enforce centralized management.
+
+- Created GPO to automatically map **U: Drive** to the file server upon login.
+- Configured **Folder Redirection** for the Documents folder to store user data on Uni-FS.
+- Ensured persistent access to files across multiple client machines.
+- Verified policy application using:
+  - gpupdate /force
+  - gpresult /r
+
+### Screenshots
+
+1. GPO Drive Mapping Configuration  
+![Drive Mapping GPO](Screenshots/Group-Policy-Managment-console/Group-policy.png)
+
+3. gpresult Verification Output  
+![GPResult](Screenshots/GPResult.png)
+
+
+
+
+
+
+
+
+
+
