@@ -77,3 +77,35 @@ To demonstrate the setup and provide visual proof:
    ![Member Server Join](Screenshots/Active-Directory-Users-and-Computers/FS-domain-connected.png)
 
 
+## File Server Engineering
+
+The Uni-FS member server was configured as a centralized storage system for student report submissions.
+
+- Deployed secondary Windows Server (Uni-FS) and joined it to the domain.
+- Configured SMB network share: **Business_Report_Submission**.
+- Designed a secure “Drop-Box” permission model using NTFS.
+- Implemented **Creator Owner** to ensure users automatically become owners of their uploaded files.
+- Enabled **Access-Based Enumeration (ABE)** to hide unauthorized folders from users.
+- Applied Security Group-based access control instead of per-user permissions.
+
+### Security Model
+
+- Students:
+  - Can upload reports.
+  - Cannot view other students’ files.
+- Admins:
+  - Full Control for oversight and management.
+
+### Screenshots
+
+1. SMB Share Configuration (Server Side)  
+![SMB Share](Screenshots/File-server-SS/FS-smb-share.png)
+
+2. NTFS Advanced Permissions – Creator Owner Implementation (Server Side)  
+![NTFS Permissions](Screenshots/File-server-SS/NTFS-security.png)
+
+3. Access-Based Enumeration (ABE) Enabled (Server Side)  
+![ABE Enabled](Screenshots/File-server-SS/FS-enumeration.png)
+
+4. Student View – Secure Drop-Box Model in Action (Client Side)  
+![Student View](Screenshots/File-server-SS/studentview.png)
